@@ -1,0 +1,12 @@
+#!/bin/bash
+
+branch=$(git symbolic-ref --short HEAD) || 2>/dev/null
+branchNumber=$(echo $branch | grep -o -E '[0-9]+' | head -1 | sed -e 's/^0\+//')
+
+if [ -z "$branchNumber" ]
+then
+	sed -i .bak -e "" $1
+else
+	prependCommitMessage=$(echo -e "MOB-$branchNumber\n")
+	sed -i .bak -e "1s:^:$prependCommitMessage :" $1
+fi
