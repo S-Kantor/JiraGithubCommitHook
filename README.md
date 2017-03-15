@@ -9,7 +9,7 @@ i.e "sam/fix/sk-345-this-is-a-cool-branch" or "sk-1234-even-cooler-branch-2345" 
 ### Basic installation
 
 1. Open your terminal
-2. cd <RepositoryHere>/.git/hooks/
+2. cd \<YourRepositoryHere>/.git/hooks/
 3. Enter the follow line of code
 
 `
