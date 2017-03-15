@@ -13,7 +13,7 @@ i.e "sam/fix/sk-345-this-is-a-cool-branch" or "sk-1234-even-cooler-branch-2345" 
 3. Enter the follow line of code
 
 `
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/s-kantor/jiragithubcommithook/master/prepare-commit-msg)"
+sh -c "$(curl -O -fsSL https://raw.githubusercontent.com/s-kantor/jiragithubcommithook/master/prepare-commit-msg)"
 `
 
 4. chmod a+x prepare-commit-msg
