@@ -1,6 +1,6 @@
 ## Simple script that automatically prepends JiraSpace-JiraNumber to each commit
 
-###Requirement for this script to work:
+### Requirement for this script to work:
 
 1. The branch name that you commit to **must** include the ticket number in the beginning of the name.
 
